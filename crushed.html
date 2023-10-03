@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <style>
+
+*{
+
+    box-sizing: border-box;
+
+    margin: 0px;
+
+    padding:0px;
+
+    text-decoration: none;
+
+}
+
+
+ #home {
+
+    background:url('image/hotel.jpg');
+
+    background-size:cover;
+
+    background-repeat: no-repeat;
+
+    width:100%;
+
+    height: 100vh;
+
+    
+
+}
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+
+.header{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: dodgerblue;
+
+    padding:8px 0px;
+
+    position: fixed;
+
+    width:100%;
+
+    
+
+
+
+
+} 
+
+
+.header h1{
+
+    margin-left: 10px;
+
+    color:gold;
+
+
+}
+
+.header h1:hover{
+
+    color:red;
+
+}
+
+
+.menu {
+
+    width:50%;
+
+
+}
+
+ .menu nav {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+
+ }
+
+ .menu nav a{
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    color:white;
+
+    transition:width 2s ;
+
+ }
+
+ input[type=search]  {
+
+
+    padding: 5px 0px;
+
+    font-weight: bold;
+
+    font-size:16px;
+
+    border-radius: 5px;
+
+
+ }
+
+ button{
+
+    margin-right:10px;
+
+    padding: 5px 5px;
+
+    font-weight: bold;
+
+    font-size:16px;
+
+   border-radius: 5px;
+
+   background: green;
+
+   color: white;
+
+ }
+
+ 
+
+  button:hover{
+
+        background-color:red;
+
+    }
+
+
+
+
+
+
+.content{
+
+    display: flex;
+
+    justify-content: flex-start;
+
+    align-items: center;
+
+}
+
+ marquee {
+
+    font-size:50px;
+
+    text-align: center;
+
+    margin-top: 300px;
+
+    margin-bottom: 20px;
+
+    color:red;
+
+    text-shadow: 2px 2px;
+
+  
+
+    
+
+}
+
+
+
+
+
+
+
+
+.para{
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+p{
+
+color:black;
+
+    font-weight: bold;
+
+    font-size:30px;
+
+    margin-left:350px;
+
+    text-shadow: 1px 1px;
+
+    ;
+
+    
+
+}
+
+p:hover{
+
+    color:yellow;
+
+}
+
+
+
+
+
+
+#ourservices {
+
+    width:100%;
+
+    height: 100%;
+
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(image/bg1.png);
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center;
+
+
+}
+
+#ourservices h1{
+
+    color:red;
+
+    text-align: center;
+
+   left:0px;
+
+    
+
+    min-width:100%;
+
+    padding: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+#ourservices h1::after{
+
+    content: "";
+
+    display: block;
+
+    width:170px;
+
+    height:3px;
+
+    margin:20px auto;
+
+    background: red;
+
+}
+
+#ourservices span {
+
+    color:dodgerblue;
+
+    padding:10px;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+
+}
+
+.container{
+
+    margin-left: 50px;
+
+    display: flex;
+
+    margin-top: 30px;
+
+    align-items: center;
+
+}
+
+.container1{
+
+    margin-left: 50px;
+
+    display: flex;
+
+    
+
+    align-items: center;
+
+}
+
+
+    .Services{
+
+        max-width:400px;
+
+        height:360px;
+
+        border: 1px solid dodgerblue;
+
+        margin: 2px;
+
+     border-radius: 2px;
+
+    }
+
+
+    .Services1{
+
+        max-width:400px;
+
+        height:360px;
+
+        border: 3px solid gold;
+
+        margin: 2px;
+
+        border-radius: 2px;
+
+
+    }
+
+    .btn {
+
+        margin-top: 40px;
+
+        margin-left:130px;
+
+        background: black;
+
+        opacity: 0.7;
+
+    }
+
+    .btn a{
+
+        color:white;
+
+    }
+
+    .btn:hover{
+
+        background-color: gray;
+
+    }
+
+ 
+
+ #Aboutus {
+
+  
+
+    width:100%;
+
+    height: 600px;
+
+      background: linear-gradient(to bottom, #ff66ff 0%, #3399ff 100%);
+
+}
+
+
+
+
+#price{
+
+    width:100%;
+
+    height: 600px;
+
+      background: pink;
+
+}
+
+#Accomodation{
+
+    width:100%;
+
+    height: 600px;
+
+    background: dodgerblue;
+
+
+}
+
+#contactus{
+
+    width:100%;
+
+    height: 600px;
+
+}
+
+#content-left{
+float:left;
+margin: 10px;
+padding: 10px;
+background-color:lightblue;
+}
+
+#content-right{
+float:right;
+margin: 10px;
+padding: 10px;
+background-color: lightblue;
+}
+
+
+.footer-container{
+background-color: blue;
+width: 100%;
+height: 40vh;
+
+}
+
+.footer{
+width: 100%;
+height: 40vh;
+background-color: cornflowerblue;
+color: white;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin: 0 auto;
+}
+
+.footer-heading{
+
+display: flex;
+flex-direction: column;
+margin-right: 4rem;
+}
+
+.footer-heading h2{
+margin-bottom: 2rem;
+}
+
+.footer-heading a{
+color: white;
+text-decoration: none;
+margin-bottom: 0.5rem;
+
+}
+.footer-heading a:hover{
+color: red;
+transition: 0.3s ease-out;
+
+}
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+.footer-email-form h2{
+margin-bottom: 2rem;
+}
+
+#footer-email{
+width: 250px;
+height: 40px;
+border-radius: 4px;
+outline: none;
+border: none;
+padding-left: 0.5rem;
+font-size: 1rem;
+margin-bottom: 1rem;
+}
+
+#footer-email::placeholder{
+color:blue;
+}
+
+#footer-emailbtn-btn{
+width: 100px;
+height: 40px;
+border-radius: 4px;
+background-color: red;
+outline: none;
+border: none;
+color: white;
+font-size: 1rem;
+
+}
+
+.container {  
+  padding: 50px;  
+  background-color:rgb(182, 230, 173);
+
+ 
+}  
+
+input[type=text], input[type=password], textarea {  
+width: 30%;  
+padding: 15px;  
+margin: 5px 0 22px 0;  
+display: inline-block;  
+border: none;  
+background: #f1f1f1; 
+
+}  
+input[type=text]:focus, input[type=password]:focus {  
+background-color: red;  
+outline: none;  
+}  
+div {  
+          padding: 50px 0;  
+       }  
+hr {  
+border: 1px solid #f1f1f1;  
+margin-bottom: 25px;  
+}  
+
+.registerbtn {  
+
+color: black;  
+padding: 16px 20px;  
+margin: 8px 0;  
+border: none;  
+cursor: pointer;  
+width: 20%;  
+opacity: 0.9;  
+}  
+.registerbtn:hover {  
+opacity: 1;  
+}  
+
+
+    <title>Hotel Website</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</style>
+
+</head>
+
+<body>
+
+  
+
+    <div class="header">
+
+        <h1>Kay travel agency</h1>
+
+        <div class="menu">
+
+            <nav>
+
+                <a href="home.html">Home</a>
+                <a href="#contactus">contact us</a>
+
+            </nav>
+
+</div>
+
+<div>
+
+<input type= "search" name="items" id="items">
+
+<button>Search</button>
+
+</div>
+
+</div>
+<div>
+<h6>
+  <img src="th.jfif" height="300" width="300">
+  </h6>
+</div>
+
+ <div id="home">    
+
+    <div class="content">
+
+    <marquee>Welcome to Kay travel.</marquee>
+
+</div>
+</div>
+
+<div>
+
+    <p class="para">We will provide Hospitality Behaviour to  Our Customers.</p>
+
+</div>
+
+</div>
+       
+
+      <div id="ourservices">
+
+      <h1>Enjoy your crush  holidays</h1>
+
+        <span class="side"><i>The Crush the Holidays Challenge will provide you with the 
+            accountability and support you need to stick with it and steer away from the traps of
+             Eating Season. Including brief films each day to keep you motivated and concentrated.
+              Join the exclusive, closed Crush the Holidays Facebook Group to meet others who share your interests.
+             And direct communication with Coach Allan to keep you grounded and hold you accountable.<i></span>
+
+        </div>
+
+         <div class="container">
+
+         <div class="Services">
+            <h1>Germany</h1>
+
+            <img src="cruise-ship-332711_960_720.jpg" alt="rafting" width="394px" height="200px">
+
+            <main>Upfloor crush is one of the most exciting adventures. 
+                We assure you of all the precautions you need to feel comfortable performing in crushed.
+
+            </main>
+
+            <button class="btn"><a href="contact.html" target="_blank">Contact.</a></button>
+
+           </div>
+
+           <div class="Services">
+            <h1>USA</h1>
+
+            <img src="istockphoto-1083451184-612x612.jpg" alt="person" width="394px" height="200px">
+
+            <main>One of life's most exciting adventures is enjoying the crush on the beach. We guarantee
+                 that you will take all necessary precautions to feel safe while diving. </main>
+
+            <button class="btn"><a href="contact.html" target="_blank">Contact.</a></button>
+
+           </div>
+
+           <div class="Services">
+            <h1>Thailand</h1>
+
+            <img src="P&O Cruises Britannia Exterior.jpg" alt="person" width="394px" height="200px">
+
+            <main>One of the most exciting adventures is enjoying the middle 
+                of the sea in the crush. We assure you of all the precautions you need
+                 to feel comfortable on your tri
+                 </main>
+
+            <button class="btn"><a href="contact.html" target="_blank">Contact.</a></button>
+
+           </div>
+
+       </div>
+
+       <div class="container1">
+        
+
+           <div class="Services1">
+            <h1>Singapur</h1>
+
+            <img src="July trip, started 6.7.2013 474.jpg" alt="person" width="394px" height="200px">
+
+            <main>The side view from the crush is one of the most exciting adventures.
+                 We guarantee that you will be safe and comfortable during your trip. </main>
+
+            <button class="btn"><a href="contact.html" target="_blank">Contact.</a></button>
+
+         </div>
+
+            <div class="Services1">
+                <h1>Sweetzerland</h1>
+
+            <img src="_295d321e-00ee-11e8-a2b4-180df2fa46c1.jpg" alt="person" width="394px" height="200px">
+
+            <main>Enjoying the view from the top of the crush is one of the most exciting adventures. 
+                We assure you that we have taken all necessary precautions for your trip. 
+            </main>
+
+            <button class="btn"><a href="contact.html" target="_blank">Contact.</a>
+
+</button>
+
+         </div>
+
+          
+
+          <div class="Services1">
+             
+            <h1>France</h1>
+            <img src="dining-room-buffet-aboard-luxury-abstract-cruise-ship-dining-room-buffet-aboard-abstract-luxury-cruise-ship-breakfast-167293528.jpg" alt="person" 
+            width="394px" height="200px">
+
+            <main>Enjoying food in the crowd with family is one of the most exciting adventures. 
+                We assure you that we have taken all necessary precautions. </main>
+
+            <button class="btn"><a href="contact.html" target="_blank">Contact.</a></button>
+
+         </div>
+
+</div>
+
+
+<div id="Aboutus">
+    <h6 align="center">
+ <img src="cruise-ship-332711_960_720.jpg" width="1200" height="500">
+</h6>
+</div>
+
+  <div id="price">
+    <h6 align="center">
+ <img src="dining-room-buffet-aboard-luxury-abstract-cruise-ship-dining-room-buffet-aboard-abstract-luxury-cruise-ship-breakfast-167293528.jpg" width="1200" height="500">
+</h6>
+    
+ </div>
+
+  <div id="Accomodation">
+    <div class="slideshow-container" align="center">
+
+<div class="mySlides fade">
+  <img src="july trip, started 6.7.2013 474.jpg" height="300" width="500">
+  <div class="text">1</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="_295d321e-00ee-11e8-a2b4-180df2fa46c1.jpg" height="300" width="500">
+  <div class="text">2</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="dining-room-buffet-aboard-luxury-abstract-cruise-ship-dining-room-buffet-aboard-abstract-luxury-cruise-ship-breakfast-167293528.jpg" height="300" width="500">
+  <div class="text">3</div>
+</div>
+</div>
+<br>
+    </div>
+    <div style="text-align:right">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+  
+    <div id="contactus">
+    <div class="footer-container">
+    <div class="footer">
+    <div class="footer-heading footer-1">
+    <h2 style="color: black;">About Us</h2>
+    <a href="#">Blog</a>
+    <a href="#">Demo</a>
+    <a href="#">Customer</a>
+    <a href="#">Invester</a>
+    <a href="#">Terms of service</a>
+  </div>
+  <div class="footer-heading footer-2">
+    <h2 style="color:black;">Contact Us</h2>
+    <a href="#">Job</a>
+    <a href="#">Support</a>
+    <a href="#">Contact</a>
+    
+  </div>
+  <div class="footer-heading footer-3">
+    <h2 style="color: black;">Social Media</h2>
+    <a href="#">Facebook</a>
+    <a href="#">Twiter</a>
+    <a href="#">Instagram</a>
+  </div>
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  <div class="footer-email-form">
+  
+  <h2 style="color: black;">Join our newsletter</h2>
+   <input type="email" placeholder="enter your email address" id="footer-email" required />
+   <input type="password" placeholder="enter your email password" id="footer-email" required />
+   <input type="submit" value="Signin" id="footer-emailbtn" onclick="submit_form()">
+  </form>
+  </div>
+  </div>
+</div>
+</div>
+<script src="script.js">
+  </script>
+<script src="script.js">
+    </script>
+</body>
+
+</html>

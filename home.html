@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <style>
+
+*{
+
+    box-sizing: border-box;
+
+    margin: 0px;
+
+    padding:0px;
+
+    text-decoration: none;
+
+}
+
+
+
+ #home {
+
+    background:url('image/hotel.jpg');
+
+    background-size:cover;
+
+    background-repeat: no-repeat;
+
+    width:100%;
+
+    height: 100vh;
+
+    
+
+}
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+
+
+.header{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: dodgerblue;
+
+    padding:8px 0px;
+
+    position: fixed;
+
+    width:100%;
+
+    
+
+
+
+
+
+} 
+
+
+
+.header h1{
+
+    margin-left: 10px;
+
+    color:gold;
+
+
+
+}
+
+.header h1:hover{
+
+    color:red;
+
+}
+
+
+
+.menu {
+
+    width:50%;
+
+
+
+}
+
+ .menu nav {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+
+
+ }
+
+ .menu nav a{
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    color:white;
+
+    transition:width 2s ;
+
+ }
+
+ input[type=search]  {
+
+
+
+    padding: 5px 0px;
+
+    font-weight: bold;
+
+    font-size:16px;
+
+    border-radius: 5px;
+
+
+
+ }
+
+ button{
+
+    margin-right:10px;
+
+    padding: 5px 5px;
+
+    font-weight: bold;
+
+    font-size:16px;
+
+   border-radius: 5px;
+
+   background: green;
+
+   color: white;
+
+ }
+
+ 
+
+  button:hover{
+
+        background-color:red;
+
+    }
+
+
+
+
+
+
+
+.content{
+
+    display: flex;
+
+    justify-content: flex-start;
+
+    align-items: center;
+    background-image: url("Swayambhunath.jpg" );
+    background-repeat: no-repeat;
+    background-size:1500px,1500px;
+    background-position: center;
+
+}
+
+ marquee {
+
+    font-size:50px;
+
+    text-align: center;
+
+    margin-top: 300px;
+
+    margin-bottom: 20px;
+
+    color:mediumblue;
+
+    text-shadow: 2px 2px;
+
+  
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+.para{
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+p{
+
+color:black;
+
+    font-weight: bold;
+
+    font-size:30px;
+
+    margin-left:350px;
+
+    text-shadow: 1px 1px;
+
+    ;
+
+    
+
+}
+
+p:hover{
+
+    color:yellow;
+
+}
+
+
+
+
+
+
+
+#ourservices {
+
+    width:100%;
+
+    height: 100%;
+
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(image/bg1.png);
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center;
+
+
+
+}
+
+#ourservices h1{
+
+    color:red;
+
+    text-align: center;
+
+   left:0px;
+
+    
+
+    min-width:100%;
+
+    padding: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+#ourservices h1::after{
+
+    content: "";
+
+    display: block;
+
+    width:170px;
+
+    height:3px;
+
+    margin:20px auto;
+
+    background: red;
+
+}
+
+#ourservices span {
+
+    color:dodgerblue;
+
+    padding:10px;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+
+
+}
+
+.container{
+
+    margin-left: 50px;
+
+    display: flex;
+
+    margin-top: 30px;
+
+    align-items: center;
+
+}
+
+.container1{
+
+    margin-left: 50px;
+
+    display: flex;
+
+    
+
+    align-items: center;
+
+}
+
+
+
+    .Services{
+
+        max-width:400px;
+
+        height:360px;
+
+        border: 1px solid dodgerblue;
+
+        margin: 2px;
+
+     border-radius: 2px;
+
+    }
+
+
+
+    .Services1{
+
+        max-width:400px;
+
+        height:360px;
+
+        border: 3px solid gold;
+
+        margin: 2px;
+
+        border-radius: 2px;
+
+
+
+    }
+
+    .btn {
+
+        margin-top: 40px;
+
+        margin-left:130px;
+
+        background: black;
+
+        opacity: 0.7;
+
+    }
+
+    .btn a{
+
+        color:white;
+
+    }
+
+    .btn:hover{
+
+        background-color: gray;
+
+    }
+
+ 
+
+ #Aboutus {
+
+  
+
+    width:100%;
+
+    height: 600px;
+
+      background: linear-gradient(to bottom, #ff66ff 0%, #3399ff 100%);
+
+}
+
+
+
+
+
+#price{
+
+    width:100%;
+
+    height: 600px;
+
+      background: pink;
+
+}
+
+#Accomodation{
+
+    width:100%;
+
+    height: 600px;
+
+    background: dodgerblue;
+
+
+
+}
+
+#contactus{
+
+    width:100%;
+
+    height: 600px;
+
+
+}
+
+#content-left{
+float:left;
+margin: 10px;
+padding: 10px;
+background-color:lightblue;
+}
+
+
+#content-right{
+float:right;
+margin: 10px;
+padding: 10px;
+background-color: lightblue;
+}
+
+
+
+.footer-container{
+background-color: blue;
+width: 100%;
+height: 40vh;
+
+}
+
+.footer{
+width: 100%;
+height: 40vh;
+background-color: cornflowerblue;
+color: white;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin: 0 auto;
+}
+
+.footer-heading{
+
+display: flex;
+flex-direction: column;
+margin-right: 4rem;
+}
+
+.footer-heading h2{
+margin-bottom: 2rem;
+}
+
+.footer-heading a{
+color: white;
+text-decoration: none;
+margin-bottom: 0.5rem;
+
+}
+.footer-heading a:hover{
+color: red;
+transition: 0.3s ease-out;
+
+}
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+.footer-email-form h2{
+margin-bottom: 2rem;
+}
+
+#footer-email{
+width: 250px;
+height: 40px;
+border-radius: 4px;
+outline: none;
+border: none;
+padding-left: 0.5rem;
+font-size: 1rem;
+margin-bottom: 1rem;
+}
+
+#footer-email::placeholder{
+color:blue;
+}
+
+#footer-emailbtn-btn{
+width: 100px;
+height: 40px;
+border-radius: 4px;
+background-color: red;
+outline: none;
+border: none;
+color: white;
+font-size: 1rem;
+
+
+}
+
+
+.container {  
+  padding: 50px;  
+  background-color:rgb(182, 230, 173);
+
+ 
+}  
+
+input[type=text], input[type=password], textarea {  
+width: 30%;  
+padding: 15px;  
+margin: 5px 0 22px 0;  
+display: inline-block;  
+border: none;  
+background: #f1f1f1; 
+
+}  
+input[type=text]:focus, input[type=password]:focus {  
+background-color: red;  
+outline: none;  
+}  
+div {  
+          padding: 50px 0;  
+       }  
+hr {  
+border: 1px solid #f1f1f1;  
+margin-bottom: 25px;  
+}  
+
+.registerbtn {  
+
+color: black;  
+padding: 16px 20px;  
+margin: 8px 0;  
+border: none;  
+cursor: pointer;  
+width: 20%;  
+opacity: 0.9;  
+}  
+.registerbtn:hover {  
+opacity: 1;  
+}  
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  
+}
+
+    <title>Hotel Website</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</style>
+
+</head>
+
+<body>
+
+  
+
+    <div class="header">
+
+        <h1>Kay Travel</h1>
+
+        <div class="menu">
+
+            <nav>
+
+                <a href="#home">Home</a>
+
+                <a href="#ourservices">Our Services</a>
+
+                <a href="#Aboutus">About us</a>
+
+                <a href="#price">PRICE </a>
+
+                <a href="#Accomodation">Accomodation</a>
+
+                <a href="#contactus">contact us</a>
+
+            </nav>
+
+</div>
+
+<div>
+
+<input type= "search" name="items" id="items">
+
+<button>Search</button>
+
+</div>
+
+</div>
+<div>
+<h6>
+  <img src="th.jfif" height="300" width="300">
+  </h6>
+</div>
+
+ <div id="home">    
+
+    <div class="content" >
+     
+    <marquee>Welcome to Kay travel.</marquee>
+
+</div>
+</div>
+
+<div>
+
+    <p class="para">We will provide Hospitality Behaviour to  Our Customers.</p>
+
+</div>
+
+</div>
+<div id="ourservices">
+        <div id="content-left">
+            <h1 style = "color:green;" > 
+                OUR MISSION
+            </h1> 
+                  
+            <h4> Providing excellence in customer service and support for all global travel solutions.</h4>
+                
+        </div>
+
+        <div id="content-right">
+            <h1 style = "color:green;" > 
+                  OUR VISION 
+            </h1> 
+                  
+            <h4> Making travel easy whilst creating memorable experiences.</h4>
+         </div>
+      </div>
+
+
+      
+        <div>
+         <h1 >Our Services.</h1>
+
+        <span class="side"><i>Our company  is one of the Finest travel throughout the nation .
+
+         Our travel provides a Good and Quality Facility of foods and Rooms to Our Customers. Our main Services are Rafting , Skydriving , Swimming , Jungle Safari and many more Regarding Excreation and fun. Beside this  the main iteams in Our Restaurant are Italian food , Sub-Continental food ,
+
+        European Food as well as Western Culture Food.<i></span>
+
+        </div>
+      
+
+         <div class="container">
+
+         <div class="Services">
+          
+
+           <h1>holidays on beach</h1>
+            <img src="drink-on-beach.jpg" alt="rafting" width="394px" height="200px">
+
+            <main>One of the most exciting adventures is going to the beach. We will take all necessary precautions
+               to ensure your safety while on the beach.</main>
+
+            <button class="btn"><a href="beach.html" target="_blank">Details.</a></button>
+
+           </div>
+
+           <div class="Services">
+            
+            <h1>holidays on crushed</h1>
+            <img src="RCI_AL-Aerial351R.jpg" alt="person" width="394px" height="200px">
+
+            <main>Crushed is one of the Most Exciting Adventures .We Assure you all the Precaution you can easily Feel Comfortable for 
+
+            Performing crushed.</main>
+
+            <button class="btn"><a href="crushed.html" target="_blank">Details.</a></button>
+
+           </div>
+
+           <div class="Services">
+            
+            <h1>your vacation in the jungle</h1>
+            <img src="elephant-safari-chitwan-national-park-4-768x576.jpg" alt="person" width="394px" height="200px">
+
+            <main>Jungle Safari is one of the Most Exciting Adventures . We Assure you all the Precaution you can 
+              easily Feel Comfortable for Safari. </main>
+
+            <button class="btn"><a href="jungle.html" target="_blank">Details.</a></button>
+
+           </div>
+
+        </div>
+
+           <div class="container1">
+                 
+           <div class="Services1">
+            
+            <h1>Have fun on your city trip.</h1>
+
+            <img src="pixz-26.jpg" alt="person" width="394px" height="200px">
+
+            <main>One of the most thrilling adventures is exploring a city and its culture. We guarantee that you will be
+               safe and comfortable in country culture. </main>
+
+            <button class="btn"><a href="city.html" target="_blank">Details.</a></button>
+
+         </div>
+
+            <div class="Services1">
+              
+            <h1>the most adventurous trip</h1>
+            <img src="1564031616_MKRZj_adventure_travel_nepal.jpg" alt="person" width="394px" height="200px">
+
+            <main>Rafting is one of the Most Exciting Adventures .
+                We Assure you all the Precaution you can easily Feel Comfortable for 
+
+            Performing Rafting.</main>
+
+            <button class="btn"><a href="adventure.html" target="_blank">Details.</a>
+
+        </button>
+
+         </div>
+
+          
+
+          <div class="Services1">
+            
+            <h1>Find your ski vacation.</h1>
+            <img src="Whiteface-Mountain-Ski.png" alt="person" width="394px" height="200px">
+
+            <main>Skiing is one of the most exciting adventures. We assure you of all the
+               precautions you need to feel comfortable on skis.</main>
+
+            <button class="btn"><a href="ski.html" target="_blank">Details.</a></button>
+
+         </div>
+
+      </div>
+    
+
+
+
+<div id="Aboutus">
+    <h1 align="center">Our promise</h1>
+    <main>At Kay Travel, we go above and beyond to make sure that booking your trip is as simple and
+         hassle-free as possible. We pledge to provide extra services for travel arrangements, 
+         booking paperwork, and ticketing that are included in the price of your vacation. 
+         Therefore, if you prefer a more personalized experience, our great service and assistance
+          will help you with your travel arrangements so you can unwind, unwind, and enjoy your trip.</main>
+    
+     <h6>
+    <img src="th.jfif" height="200" width="200" align="left">
+   </h6>
+    
+    
+        <h6>
+            <img src="viber_image_2022-10-13_18-37-35-023.jpg" alt="Avatar" class="avatar" align="right">
+        </h6>
+     <div align="center"> <main>The business Kay Travel is new. We provide you with </br>
+        the most availability for international destinations as an independent travel agency,</br> 
+        and we can provide vacations to suit any budget. Your trip is financially</br>
+         secure with us because we are ABTA and ATOL bonded and proud members of </br>
+         The Co-operative Travel Consortium.</main>  
+         </div>
+     <div>
+     <h3 align="left">Mobile no:4915781770086</h3>
+     <h3 align="right">Email:kay.travel@gmail.com</h3>
+    </div>
+   </div>
+  <div id="price">
+    <h2 style="text-align:center">Responsive Pricing Tables</h2>
+<p style="text-align:center">choose your best price</p>.</p>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Basic</li>
+    <li class="grey">$ 9.99 / day</li>
+    <li>1 Room</li>
+    <li>BreakFast</li>
+    <li>Snaks</li>
+    <li class="grey"><a href="contact.html" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#04AA6D">Pro</li>
+    <li class="grey">$ 24.99 / day</li>
+    <li>2 Rooms</li>
+    <li>Breakfast </li>
+    <li>Lunch</li>
+    <li>Snaks</li>
+    <li class="grey"><a href="contact.html" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Premium</li>
+    <li class="grey">$ 49.99 / day</li>
+    <li>3 Rooms</li>
+    <li>Breakfast</li>
+    <li>Lunch</li>
+    <li>Snaks</li>
+    <li>Dinner</li>
+    <li class="grey"><a href="contact.html" class="button">Sign Up</a></li>
+  </ul>
+</div>
+    
+    
+    </div>
+
+  <div id="Accomodation">
+
+  <div id="price">
+    <h2 style="text-align:center">Responsive Pricing Tables</h2>
+<p style="text-align:center">choose your best Accomodation</p>.</p>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:red">Ticket</li>
+    <li class="grey">Ticket</li>
+    <li>AIR</li>
+    <li>BUS</li>
+    <li>TRAIN</li>
+    <li>SHIP</li>
+    <li class="grey"><a href="contact.html" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#04AA6D">Pro</li>
+    <li class="grey">Hotel</li>
+    <li>Single Room</li>
+    <li>Double Room </li>
+    <li>Famliy Room</li>
+    <li>Eventspace</li>
+    <li class="grey"><a href="contact.html" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Premium</li>
+    <li class="grey">Land Space</li>
+    <li>Land with charging </li>
+    <li>Land without charing</li>
+    <li>Land with light </li>
+    <li>Land without light</li>
+    <li>Land with cooking space</li>
+    <li class="grey"><a href="contact.html" class="button">Sign Up</a></li>
+  </ul>
+</div>
+    
+    </div>
+
+    <div id="contactus">
+
+    <div class="footer-container">
+    <div class="footer">
+    <div class="footer-heading footer-1">
+    <h2 style="color: black;">About Us</h2>
+    <a href="#">Blog</a>
+    <a href="#">Demo</a>
+    <a href="#">Customer</a>
+    <a href="#">Invester</a>
+    <a href="#">Terms of service</a>
+  </div>
+  <div class="footer-heading footer-2">
+    <h2 style="color:black;">Contact Us</h2>
+    <a href="#">Job</a>
+    <a href="#">Support</a>
+    <a href="#">Contact</a>
+    
+  </div>
+  <div class="footer-heading footer-3">
+    <h2 style="color: black;">Social Media</h2>
+    <a href="#">Facebook</a>
+    <a href="#">Twiter</a>
+    <a href="#">Instagram</a>
+  </div>
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  <div class="footer-email-form">
+  
+  <h2 style="color: black;">Join our newsletter</h2>
+   <input type="email" placeholder="enter your email address" id="footer-email" required />
+   <input type="password" placeholder="enter your email password" id="footer-email" required/>
+   <input type="submit" value="Signin" id="footer-emailbtn" onclick="submit_form()">
+  </form>
+  </div>
+  </div>
+</div>
+</div>
+<div class="information-info">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7544.139638383271!2d8.20913839032117!3d48.04739182412571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4790e918d378c655%3A0xca601f27bb86a5ca!2sAm%20Gro%C3%9Fhausberg%2C%2078120%20Furtwangen%20im%20Schwarzwald!5e0!3m2!1sde!2sde!4v1667669558292!5m2!1sde!2sde"
+       width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+       referrerpolicy="no-referrer-when-downgrade" align ="right"></iframe> 
+       <video width="320" height="240" controls align="center">
+       <source src="nepal-4k-scenic-relaxation-film-with-calming-m.mp4" type="video/mp4">
+               
+       </video>
+      <h4>
+       copyright kay.Gmbh
+      </h4>
+</div>
+<script src="script.js">
+  </script>
+</body>
+
+</html>

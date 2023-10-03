@@ -1,0 +1,276 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>
+    h1{
+    padding: 10px;
+    background-color: white;
+    color: darkblue;
+    text-align: center;
+}
+
+h2{
+   color:magenta;
+
+}
+
+hr{
+  padding-right: 5px;
+  background-color: gold;
+  color: darkgreen;
+  text-align: right;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto;
+background-color: lightseagreen;
+padding: 10px;
+}
+.grid-item {
+background-color: rgba(255, 255, 255, 0.8);
+border: 1px solid rgba(0, 0, 0, 0.8);
+padding: 20px;
+font-size: 30px;
+text-align: center;
+}
+
+body{
+
+font-size: 20px;
+background-color: white;
+margin: auto;
+padding: 20px;
+}
+
+
+#content-left{
+float:left;
+margin: 10px;
+padding: 10px;
+background-color:lightblue;
+}
+
+
+#content-right{
+float:right;
+margin: 10px;
+padding: 10px;
+background-color: lightblue;
+}
+
+
+#ski{
+float:left;
+margin: 10px;
+padding: 10px;
+}
+
+
+#special{
+
+float: right;
+margin: 3px;
+padding: 3px;
+background-color: blueviolet;
+
+}
+
+
+#slideshow-container{
+float: left;
+margin: 10px;
+padding: 10px;
+background-color:white ;
+
+
+}
+
+
+.footer-container{
+background-color: blue;
+width: 100%;
+height: 40vh;
+
+}
+
+.footer{
+width: 100%;
+height: 40vh;
+background-color: cornflowerblue;
+color: white;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin: 0 auto;
+}
+
+.footer-heading{
+
+display: flex;
+flex-direction: column;
+margin-right: 4rem;
+}
+
+.footer-heading h2{
+margin-bottom: 2rem;
+}
+
+.footer-heading a{
+color: white;
+text-decoration: none;
+margin-bottom: 0.5rem;
+
+}
+.footer-heading a:hover{
+color: red;
+transition: 0.3s ease-out;
+
+}
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+.footer-email-form h2{
+margin-bottom: 2rem;
+}
+
+#footer-email{
+width: 250px;
+height: 40px;
+border-radius: 4px;
+outline: none;
+border: none;
+padding-left: 0.5rem;
+font-size: 1rem;
+margin-bottom: 1rem;
+}
+
+#footer-email::placeholder{
+color:blue;
+}
+
+#footer-emailbtn-btn{
+width: 100px;
+height: 40px;
+border-radius: 4px;
+background-color: red;
+outline: none;
+border: none;
+color: white;
+font-size: 1rem;
+
+
+}
+
+
+.container {  
+  padding: 50px;  
+  background-color:rgb(182, 230, 173);
+
+ 
+}  
+
+input[type=text], input[type=password], textarea {  
+width: 30%;  
+padding: 15px;  
+margin: 5px 0 22px 0;  
+display: inline-block;  
+border: none;  
+background: #f1f1f1; 
+
+}  
+input[type=text]:focus, input[type=password]:focus {  
+background-color: red;  
+outline: none;  
+}  
+div {  
+          padding: 50px 0;  
+       }  
+hr {  
+border: 1px solid #f1f1f1;  
+margin-bottom: 25px;  
+}  
+
+.registerbtn {  
+
+color: black;  
+padding: 16px 20px;  
+margin: 8px 0;  
+border: none;  
+cursor: pointer;  
+width: 20%;  
+opacity: 0.9;  
+}  
+.registerbtn:hover {  
+opacity: 1;  
+}  
+
+
+</style>
+ 
+</head>  
+<body>  
+    <a  href="Home.html">Home</a>
+        <div class="polaroid">
+            <div class="container">
+            </div>
+          </div>
+          
+          
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  <div class="container" >  
+  <center>  <h1>Registeration Form</h1> </center>  
+  <hr>  
+  <label>First name</label>   
+<input type="text" name="fname" placeholder= "Firstname" size="15" required /> </br>       
+<label> Lastname: </label>    
+<input type="text" name="fname" placeholder="Lastname" size="15"required />   
+<div>  
+<label>   
+Continent :  
+</label>   
+<select id=>  
+<option value="Course"> Continent</option>  
+<option value="Europe">EUROPE</option>  
+<option value="USA">USA</option>  
+<option value="Aisa">ASIA</option>
+<option value="Africa">AFRICA</option>  
+<option value="Arab">ARAB</option>     
+</select>  
+</div>  
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked id= > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+  
+</div>  
+<label>   
+Phone :  
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/></br>       
+
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required> </br>   
+ <label for="psw"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw" required></br>    
+  
+    <label for="psw-repeat"><b>Re-type Password</b></label>  
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required> </br> 
+    Current Address :</br>    
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea></br>   
+    <button type="submit" class="registerbtn" onclick="submit_form()">Register</button>    
+</form>  
+
+<script src="script.js">
+
+</script>
+</body>  
+</html>    
